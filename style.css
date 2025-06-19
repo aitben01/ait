@@ -1,0 +1,104 @@
+/* Style moderne et attirant pour Acceil.html */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 32px 0 24px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(253, 160, 133, 0.15);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: color 10s, text-shadow cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: colorChange 10s infinite alternate;
+
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: 600;
+    margin: 0 18px;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+    padding: 40px 32px;
+}
+
+h2 {
+    color: #ff6f61;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+button,
+.btn {
+    background: linear-gradient(90deg, #ff6f61 0%, #fda085 100%);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255, 111, 97, 0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover,
+.btn:hover {
+    background: linear-gradient(90deg, #fda085 0%, #ff6f61 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 24px 0;
+    color: #fff;
+    background: rgba(255, 111, 97, 0.85);
+    margin-top: 40px;
+    border-radius: 0 0 18px 18px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    main {
+        padding: 20px 8px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
